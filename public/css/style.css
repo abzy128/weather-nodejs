@@ -1,0 +1,75 @@
+/* public/css/style.css */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background: #000000;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #ffffffc9;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#weatherData,
+#mapData {
+  margin-top: 20px;
+}
+
+#map {
+  height: 300px;
+  width: 100%;
+}
+
+#icon {
+  width: 75px;
+  height: 75px;
+  background-color: #ffffffff;
+  border-radius: 50%;
+}
